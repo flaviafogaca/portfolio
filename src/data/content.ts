@@ -13,7 +13,7 @@ export const about = {
   paragraphs: [
     "Sou Engenheira Ambiental com mais de cinco anos de experiência profissional em gestão de projetos, análise de dados e documentação técnica. Hoje estou construindo uma segunda especialização, em Tecnologia da Informação, unindo o raciocínio analítico da engenharia ao desenvolvimento de software.",
     "Essa trajetória não é um recomeço — é uma continuidade. Já sei lidar com problemas reais, requisitos, prazos, conformidade e responsabilidade por entregas. O que estou construindo agora é a capacidade técnica para transformar esse tipo de problema em soluções digitais, com projetos práticos em front-end, back-end e integração com bancos de dados.",
-    "Tenho interesse especial em entender o problema antes de escolher a ferramenta, e em usar IA generativa de forma consciente — como acelerador do desenvolvimento, não como substituto do entendimento.",
+    "Quero usar tecnologia para gerar impacto real — sempre com foco em quem vai usar a solução no dia a dia. Por isso, antes de escolher a ferramenta, procuro entender o problema e o cliente por trás dele. Uso IA generativa de forma consciente: como acelerador do desenvolvimento, não como substituto do entendimento.",
   ],
   facts: [
     { label: "Anos de experiência profissional", value: "5+" },
