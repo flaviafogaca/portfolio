@@ -69,7 +69,7 @@ export const projects: Project[] = [
   {
     title: "Landing Page do Studio Maria Arte",
     description:
-      "A landing page do Studio Maria Arte, um estúdio de balé clássico de Dourados (MS), foi criada para divulgar e trazer informações dos serviços oferecidos pelo studio por meio de sua página no Instagram. O Instagram é o perfil principal de divulgação do estúdio, porém as informações sobre métodos, turmas e matrículas ficam perdidas entre as postagens, fazendo com que clientes e possíveis clientes fiquem em dúvida e precisem perguntar tudo pelo WhatsApp. Com a landing page disponível direto na bio do studio, as pessoas terão fácil acesso às informações relevantes, e só aquelas que realmente têm interesse entrarão em contato. Dessa forma, a landing page foi criada para trazer informações e captar leads.",
+      "A landing page do Studio Maria Arte, um estúdio de balé clássico de Dourados (MS), foi criada para divulgar e trazer informações dos serviços oferecidos pelo studio por meio de sua página no Instagram. O Instagram é o perfil principal de divulgação do estúdio, porém as informações, como métodos, turmas e matrículas, ficam perdidas entre as postagens, fazendo com que clientes e possíveis clientes fiquem em dúvida e precisem perguntar tudo pelo WhatsApp. Com a landing page disponível direto na bio do studio, as pessoas terão fácil acesso às informações relevantes, e só aquelas que realmente têm interesse entrarão em contato. Dessa forma, a landing page foi criada para trazer informações e captar leads.",
     tags: ["HTML", "CSS", "JavaScript", "SEO"],
     status: "Concluído",
     category: "Projeto real",
