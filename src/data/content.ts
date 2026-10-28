@@ -103,7 +103,7 @@ export const experience: ExperienceItem[] = [
     bullets: [
       "Coordenação de fluxos de trabalho em 15 unidades universitárias, com metodologias de organização, controle de cronogramas e gestão de stakeholders.",
       "Levantamento de requisitos e desenvolvimento de projetos técnicos com foco em análise de dados para otimização de recursos e conformidade normativa.",
-      "Redação de relatórios técnicos e documentos para órgãos reguladores (IMASUL).",
+      "Redação de relatórios técnicos e documentos para órgãos ambientais reguladores.",
       "Execução de auditorias e automonitoramento para garantia de conformidade com padrões técnicos.",
       "Liderança de ações de conscientização e organização de eventos, articulando áreas técnicas e público acadêmico.",
     ],
