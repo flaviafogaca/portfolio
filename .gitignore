@@ -7,3 +7,4 @@ dist-ssr
 dev.cmd
 
 flavia_linkedin.png
+*.tsbuildinfo
