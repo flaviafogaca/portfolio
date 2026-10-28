@@ -79,7 +79,7 @@ export const projects: Project[] = [
   {
     title: "Sistema de Controle de Biblioteca de Cristópolis",
     description:
-      "O Sistema de Controle de Biblioteca de Cristópolis está sendo realizado como requisito para a formação no Curso de Tecnologia da Informação. O projeto faz parte de disciplinas de extensão (Projeto Integrador I, II e III) e a proposta visa resolver um problema real da Biblioteca de Cristópolis: automatizar e garantir a integridade dos dados de acervo e empréstimos de livros da biblioteca. O projeto está em desenvolvimento e a perspectiva é de finalização até novembro de 2026.",
+      "O Sistema de Controle de Biblioteca de Cristópolis está sendo realizado como requisito para a formação no Curso de Tecnologia da Informação. O projeto faz parte de disciplinas de extensão (Projeto Integrador I, II e III) e a proposta visa resolver um problema real da Biblioteca de Cristópolis, na Bahia: automatizar e garantir a integridade dos dados de acervo e empréstimos de livros da biblioteca. O projeto está em desenvolvimento e a perspectiva é de finalização até novembro de 2026.",
     tags: ["Python", "Flask", "SQLite", "pywebview", "HTML/CSS/JS"],
     status: "Em desenvolvimento",
     category: "Projeto integrador",
