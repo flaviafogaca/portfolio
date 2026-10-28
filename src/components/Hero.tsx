@@ -126,13 +126,13 @@ export function Hero() {
 
         <div className="relative mx-auto h-[400px] w-full max-w-[520px] sm:h-[460px] lg:ml-auto">
           <Polaroid
-            caption="menu da Thaiane"
+            caption="página da Thaiane"
             captionClass="pl-4 text-left"
             className="left-0 top-2 -rotate-[7deg]"
           >
             <img
               src="/projects/menu-thaiane.png"
-              alt="Print do menu de links da Thaiane Ferreira"
+              alt="Print da página de vendas da Thaiane Ferreira"
               className="aspect-square w-full rounded-sm object-cover object-top"
             />
           </Polaroid>
