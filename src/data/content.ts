@@ -2,7 +2,7 @@ export const profile = {
   name: "Flávia Fogaça",
   role: "Desenvolvedora Full-Stack",
   tagline:
-    "Uso a tecnologia para resolver os seus problemas e tirar do papel projetos que trazem impacto real, com foco na necessidade do usuário e em gerar resultados.",
+    "Uso a tecnologia para resolver os seus problemas e tirar do papel projetos que trazem impacto real, com foco na necessidade do usuário e em alcançar resultados.",
   location: "Dourados, MS",
   cvUrl: "/Curriculo-Flavia-Fogaca.pdf",
   email: "flaviamariafogaca@gmail.com",
