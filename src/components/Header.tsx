@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Github, Linkedin, Menu, Moon, Sun, X } from "lucide-react";
+import { Download, Github, Linkedin, Menu, Moon, Sun, X } from "lucide-react";
 import { profile } from "../data/content";
 import { useTheme } from "../hooks/useTheme";
 
@@ -52,6 +52,15 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
+          {profile.cvUrl && (
+            <a
+              href={profile.cvUrl}
+              download
+              className="hidden items-center gap-1.5 rounded-full border border-ink-200 px-4 py-2 text-sm font-semibold text-ink-700 transition-colors hover:border-accent-400 hover:text-accent-700 dark:border-ink-700 dark:text-ink-200 dark:hover:border-accent-500 dark:hover:text-accent-400 md:inline-flex"
+            >
+              <Download size={15} /> Currículo
+            </a>
+          )}
           <a
             href={profile.github}
             target="_blank"

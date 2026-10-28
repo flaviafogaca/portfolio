@@ -20,7 +20,7 @@ export function Skills() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           {skills.map((group, i) => (
             <Reveal key={group.title} delay={i * 80}>
-              <div className="h-full rounded-2xl border border-ink-100 bg-white p-6 dark:border-ink-800 dark:bg-ink-950">
+              <div className="h-full rounded-2xl border border-ink-100 bg-white p-6 transition-transform hover:-translate-y-1.5 dark:border-ink-800 dark:bg-ink-950">
                 <h3 className="font-display text-lg font-semibold text-ink-900 dark:text-white">
                   {group.title}
                 </h3>
@@ -28,7 +28,7 @@ export function Skills() {
                   {group.items.map((item) => (
                     <span
                       key={item}
-                      className="rounded-full border border-ink-200 px-3 py-1 text-sm text-ink-600 dark:border-ink-700 dark:text-ink-300"
+                      className="rounded-full border border-ink-200 px-3 py-1 text-sm text-ink-600 transition-colors hover:border-accent-400 hover:bg-accent-50 hover:text-accent-700 dark:border-ink-700 dark:text-ink-300 dark:hover:border-accent-500 dark:hover:bg-accent-500/10 dark:hover:text-accent-400"
                     >
                       {item}
                     </span>

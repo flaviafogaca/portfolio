@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, MessageCircle } from "lucide-react";
 import { profile } from "../data/content";
 import { Reveal } from "./Reveal";
 
@@ -20,14 +20,22 @@ export function Contact() {
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
-              href={`mailto:${profile.email}`}
+              href={profile.whatsapp}
+              target="_blank"
+              rel="noreferrer"
               className="flex items-center gap-2 rounded-full bg-accent-500 px-6 py-3 text-sm font-semibold text-ink-950 transition-transform hover:-translate-y-0.5 hover:bg-accent-400"
             >
-              <Mail size={16} /> {profile.email}
+              <MessageCircle size={16} /> WhatsApp
             </a>
           </div>
 
-          <div className="mt-8 flex items-center justify-center gap-6">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
+            <a
+              href={`mailto:${profile.email}`}
+              className="flex items-center gap-2 text-sm text-ink-300 transition-colors hover:text-accent-400"
+            >
+              <Mail size={16} /> {profile.email}
+            </a>
             <a
               href={profile.linkedin}
               target="_blank"

@@ -1,5 +1,5 @@
 import { Briefcase, GraduationCap } from "lucide-react";
-import { education, experience, languages } from "../data/content";
+import { education, experience } from "../data/content";
 import { Reveal } from "./Reveal";
 
 export function Experience() {
@@ -18,8 +18,8 @@ export function Experience() {
           </h2>
         </Reveal>
 
-        <div className="mt-10 grid gap-12 lg:grid-cols-[1.5fr_1fr]">
-          <div>
+        <div className="mt-10 space-y-16">
+          <div className="max-w-3xl">
             <Reveal>
               <h3 className="flex items-center gap-2 font-display text-lg font-semibold text-ink-900 dark:text-white">
                 <Briefcase size={20} className="text-accent-500" /> Experiência
@@ -63,7 +63,7 @@ export function Experience() {
               <h3 className="flex items-center gap-2 font-display text-lg font-semibold text-ink-900 dark:text-white">
                 <GraduationCap size={20} className="text-accent-500" /> Formação
               </h3>
-              <div className="mt-4 space-y-4">
+              <div className="mt-4 grid gap-4 sm:grid-cols-2">
                 {education.map((e) => (
                   <div
                     key={e.degree}
@@ -81,20 +81,6 @@ export function Experience() {
                   </div>
                 ))}
               </div>
-
-              <h3 className="mt-8 font-display text-lg font-semibold text-ink-900 dark:text-white">
-                Idiomas
-              </h3>
-              <ul className="mt-3 space-y-1">
-                {languages.map((l) => (
-                  <li
-                    key={l}
-                    className="text-sm text-ink-600 dark:text-ink-300"
-                  >
-                    {l}
-                  </li>
-                ))}
-              </ul>
             </Reveal>
           </div>
         </div>

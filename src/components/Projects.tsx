@@ -1,86 +1,107 @@
-import { ExternalLink, Github, Lock } from "lucide-react";
+import { ArrowUpRight, Lock } from "lucide-react";
 import { projects, type Project } from "../data/content";
 import { Reveal } from "./Reveal";
 
-const statusStyles: Record<Project["status"], string> = {
-  Live: "bg-accent-100 text-accent-700 dark:bg-accent-500/15 dark:text-accent-400",
-  "Em desenvolvimento":
-    "bg-amber-100 text-amber-700 dark:bg-amber-500/15 dark:text-amber-400",
-  Privado: "bg-ink-100 text-ink-500 dark:bg-ink-800 dark:text-ink-400",
-};
+function ProjectImage({ project }: { project: Project }) {
+  if (project.image) {
+    return (
+      <img
+        src={project.image}
+        alt={`Captura de tela do projeto ${project.title}`}
+        loading="lazy"
+        className="aspect-[16/10] w-full rounded-2xl border border-ink-100 object-cover object-top shadow-2xl shadow-ink-900/15 dark:border-ink-800 dark:shadow-black/40"
+      />
+    );
+  }
+
+  return (
+    <div className="flex aspect-[16/10] w-full flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-ink-200 bg-ink-50 text-ink-400 dark:border-ink-700 dark:bg-ink-900/40 dark:text-ink-500">
+      <Lock size={28} />
+      <span className="text-sm">Projeto privado</span>
+    </div>
+  );
+}
 
 export function Projects() {
   return (
     <section id="projetos" className="section">
-      <Reveal>
+      <Reveal className="text-center">
         <span className="text-sm font-semibold uppercase tracking-widest text-accent-600 dark:text-accent-400">
-          Projetos
+          Meu portfólio
         </span>
         <h2 className="mt-2 font-display text-3xl font-bold text-ink-900 dark:text-white sm:text-4xl">
-          O que já coloquei em prática
+          Projetos em destaque
         </h2>
       </Reveal>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-16 space-y-20 lg:space-y-28">
         {projects.map((p, i) => (
-          <Reveal key={p.title} delay={i * 100} className="h-full">
-            <article className="flex h-full flex-col rounded-2xl border border-ink-100 bg-white p-6 transition-shadow hover:shadow-lg hover:shadow-ink-900/5 dark:border-ink-800 dark:bg-ink-950 dark:hover:shadow-black/20">
-              <div className="flex items-start justify-between gap-3">
-                <h3 className="font-display text-lg font-semibold text-ink-900 dark:text-white">
+          <Reveal key={p.title}>
+            <article className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
+              <div className={i % 2 === 1 ? "lg:order-2" : ""}>
+                <ProjectImage project={p} />
+              </div>
+
+              <div className={i % 2 === 1 ? "lg:order-1" : ""}>
+                <div className="flex flex-wrap gap-2">
+                  <span className="rounded-full border border-ink-900 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-ink-900 dark:border-ink-200 dark:text-ink-100">
+                    {p.status}
+                  </span>
+                  <span className="rounded-full bg-accent-500 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
+                    {p.category}
+                  </span>
+                </div>
+
+                <h3 className="mt-4 font-display text-2xl font-bold text-ink-900 dark:text-white sm:text-3xl">
                   {p.title}
                 </h3>
-                <span
-                  className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-medium ${statusStyles[p.status]}`}
-                >
-                  {p.status}
-                </span>
-              </div>
 
-              <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-600 dark:text-ink-300">
-                {p.description}
-              </p>
-
-              <div className="mt-4 flex flex-wrap gap-2">
-                {p.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full bg-ink-50 px-2.5 py-1 text-xs text-ink-500 dark:bg-ink-900 dark:text-ink-400"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              {p.note && (
-                <p className="mt-4 flex items-center gap-1.5 text-xs italic text-ink-400 dark:text-ink-500">
-                  <Lock size={12} /> {p.note}
+                <p className="mt-3 leading-relaxed text-ink-600 dark:text-ink-300">
+                  {p.description}
                 </p>
-              )}
 
-              {(p.demoUrl || p.codeUrl) && (
-                <div className="mt-5 flex gap-4 border-t border-ink-100 pt-4 dark:border-ink-800">
-                  {p.demoUrl && (
-                    <a
-                      href={p.demoUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex items-center gap-1.5 text-sm font-medium text-ink-700 hover:text-accent-600 dark:text-ink-200 dark:hover:text-accent-400"
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {p.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-lg bg-accent-50 px-3 py-1.5 text-sm font-semibold text-accent-700 dark:bg-accent-500/10 dark:text-accent-300"
                     >
-                      <ExternalLink size={15} /> Demo
-                    </a>
-                  )}
-                  {p.codeUrl && (
-                    <a
-                      href={p.codeUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex items-center gap-1.5 text-sm font-medium text-ink-700 hover:text-accent-600 dark:text-ink-200 dark:hover:text-accent-400"
-                    >
-                      <Github size={15} /> Código
-                    </a>
-                  )}
+                      {tag}
+                    </span>
+                  ))}
                 </div>
-              )}
+
+                {p.note && (
+                  <p className="mt-5 flex items-center gap-1.5 text-sm italic text-ink-400 dark:text-ink-500">
+                    <Lock size={13} /> {p.note}
+                  </p>
+                )}
+
+                {(p.demoUrl || p.codeUrl) && (
+                  <div className="mt-6 flex flex-wrap gap-6">
+                    {p.demoUrl && (
+                      <a
+                        href={p.demoUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-1 border-b border-accent-500 pb-0.5 font-semibold text-accent-700 transition-colors hover:text-accent-500 dark:text-accent-400 dark:hover:text-accent-300"
+                      >
+                        Ver projeto <ArrowUpRight size={16} />
+                      </a>
+                    )}
+                    {p.codeUrl && (
+                      <a
+                        href={p.codeUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-1 border-b border-accent-500 pb-0.5 font-semibold text-accent-700 transition-colors hover:text-accent-500 dark:text-accent-400 dark:hover:text-accent-300"
+                      >
+                        Ver código <ArrowUpRight size={16} />
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
             </article>
           </Reveal>
         ))}
