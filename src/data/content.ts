@@ -59,7 +59,7 @@ export const projects: Project[] = [
   {
     title: "Página de Vendas da Thaiane Ferreira",
     description:
-      "Página construída para facilitar o acesso das clientes da consultora Thaiane Ferreira às suas lojas virtuais, tanto da Natura quanto da Avon. Também oferece espaço para produtos disponíveis para pronta entrega, sejam individuais ou kits e lembrancinhas para presentear, e divulga o outro trabalho da consultora, com serviços de papelaria. Toda a solução foi pensada para que o cliente encontre as informações rapidamente e escolha seus produtos com agilidade, facilitando a realização das compras. Os clientes ganham autonomia para procurar aquilo de que precisam, pois os produtos e as informações estão de fácil acesso, facilitando na hora de fazer pedidos.",
+      "Página criada para a consultora Thaiane Ferreira reunir em um só endereço o acesso às suas lojas virtuais Natura e Avon, aos produtos a pronta entrega (individuais, kits e lembrancinhas) e ao seu trabalho de papelaria. Pensada para o celular, deixa as informações à vista e dá autonomia para a cliente encontrar o que precisa e fazer o pedido com agilidade.",
     tags: ["HTML", "CSS", "JavaScript", "Cloudflare Pages"],
     status: "Concluído",
     category: "Projeto real",
@@ -69,7 +69,7 @@ export const projects: Project[] = [
   {
     title: "Landing Page do Studio Maria Arte",
     description:
-      "A landing page do Studio Maria Arte, um estúdio de balé clássico de Dourados (MS), foi criada para divulgar e trazer informações dos serviços oferecidos pelo studio por meio de sua página no Instagram. O Instagram é o perfil principal de divulgação do estúdio, porém as informações, como métodos, turmas e matrículas, ficam perdidas entre as postagens, fazendo com que clientes e possíveis clientes fiquem em dúvida e precisem perguntar tudo pelo WhatsApp. Com a landing page disponível direto na bio do studio, as pessoas terão fácil acesso às informações relevantes, e só aquelas que realmente têm interesse entrarão em contato. Dessa forma, a landing page foi criada para trazer informações e captar leads.",
+      "Landing page do Studio Maria Arte, estúdio de balé clássico de Dourados (MS), feita para ficar na bio do Instagram. As informações, como métodos, turmas e matrículas, ficavam perdidas entre as postagens e geravam muitas dúvidas pelo WhatsApp. Agora ficam em um só lugar, e só quem realmente tem interesse entra em contato.",
     tags: ["HTML", "CSS", "JavaScript", "SEO"],
     status: "Concluído",
     category: "Projeto real",
