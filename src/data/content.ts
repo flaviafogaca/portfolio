@@ -74,6 +74,7 @@ export const projects: Project[] = [
     status: "Em desenvolvimento",
     category: "Projeto real",
     image: "/projects/maria-arte.png",
+    demoUrl: "https://studiomariaarte.pages.dev/",
   },
   {
     title: "Sistema de Controle de Biblioteca de Cristópolis",
