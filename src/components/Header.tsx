@@ -108,6 +108,16 @@ export function Header() {
               {l.label}
             </a>
           ))}
+          {profile.cvUrl && (
+            <a
+              href={profile.cvUrl}
+              download
+              onClick={() => setOpen(false)}
+              className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold text-accent-700 hover:bg-ink-100 dark:text-accent-400 dark:hover:bg-ink-800"
+            >
+              <Download size={15} /> Baixar currículo
+            </a>
+          )}
         </nav>
       )}
     </header>
