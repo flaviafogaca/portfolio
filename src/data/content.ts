@@ -13,7 +13,7 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    "Sou Engenheira Ambiental e atuo há mais de sete anos com gestão de projetos, análise de dados e documentação técnica. Hoje estou cursando uma segunda graduação, em Tecnologia da Informação, para migrar de vez para o desenvolvimento de software.",
+    "Sou Engenheira Ambiental e atuo há mais de sete anos com elaboração e gestão de projetos, análise de dados e documentação técnica. Hoje estou cursando uma segunda graduação, em Tecnologia da Informação, para migrar de vez para o desenvolvimento de software.",
     "Não estou começando do zero. Já sei lidar com prazo, requisito, norma e responsabilidade por entrega real, e isso ajuda bastante na hora de aprender a programar. O que mudou foi a ferramenta: hoje trabalho com código, front end, back end e banco de dados no lugar de relatório e planilha.",
     "Gosto de tecnologia que resolve problema de verdade, pensada para quem vai usar. Antes de escolher qualquer ferramenta, procuro entender bem o problema e o usuário por trás dele. Também uso IA generativa no processo, mas como apoio para acelerar o trabalho, não como substituto do entendimento do que estou fazendo.",
   ],
