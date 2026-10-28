@@ -59,7 +59,7 @@ export const projects: Project[] = [
   {
     title: "Página de Vendas da Thaiane Ferreira",
     description:
-      "Página criada para a consultora Thaiane Ferreira reunir em um só endereço o acesso às suas lojas virtuais Natura e Avon, aos produtos a pronta entrega (individuais, kits e lembrancinhas) e ao seu trabalho de papelaria. Pensada para o celular, deixa as informações à vista e dá autonomia para a cliente encontrar o que precisa e fazer o pedido com agilidade.",
+      "Página criada para a consultora Thaiane Ferreira reunir em um só endereço o acesso às suas lojas virtuais Natura e Avon, aos produtos a pronta entrega (individuais, kits e lembrancinhas) e ao seu trabalho de papelaria. Pensada para o celular, deixa as informações à vista e dá autonomia para o cliente encontrar o que precisa e fazer o pedido com agilidade.",
     tags: ["HTML", "CSS", "JavaScript", "Cloudflare Pages"],
     status: "Concluído",
     category: "Projeto real",
