@@ -82,7 +82,7 @@ export const projects: Project[] = [
       "Sistema para automatizar os serviços da Biblioteca de Cristópolis, na Bahia, referentes ao controle do acervo e aos empréstimos, garantindo a integridade dos dados. Desenvolvido em dupla nas disciplinas de extensão Projeto Integrador I, II e III do curso de Tecnologia da Informação, com conclusão prevista para novembro de 2026.",
     tags: ["Python", "Flask", "SQLite", "pywebview", "HTML/CSS/JS"],
     status: "Em desenvolvimento",
-    category: "Projeto integrador",
+    category: "Projeto de extensão",
     image: "/projects/biblioteca.png",
     codeUrl: "https://github.com/pi-ti-flavia-antonio/biblioteca-cristopolis",
   },
